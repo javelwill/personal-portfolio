@@ -63,7 +63,7 @@ img {
   .logo {
     color: var(--secondary-color);
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1.2em;
     letter-spacing: 0.05em;
   }
 
@@ -86,11 +86,11 @@ img {
 
   h1 {
     font-size: 2.3em;
-    letter-spacing: 0.05em;
   }
 
   p {
     color: var(--quaternary-color);
+    font-weight: bold;
   }
 
   .scroll {
@@ -134,5 +134,37 @@ img {
     left: 0;
     top: 0;
     width: 240px;
+  }
+}
+
+.skills {
+  background: var(--quaternary-color);
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  li {
+    background: var(--white);
+    border-radius: 1em;
+    padding: 2em;
+  }
+
+  i {
+    font-size: 50px;
+    color: var(--primary-color);
+  }
+
+  .icon-container {
+    height: 100px;
+    display: grid;
+    place-content: center;
+  }
+
+  .title-skill {
+    text-transform: uppercase;
+    font-weight: bold;
   }
 }

@@ -70,7 +70,7 @@ img {
 .navbar .logo {
   color: var(--secondary-color);
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.2em;
   letter-spacing: 0.05em;
 }
 
@@ -99,11 +99,11 @@ img {
 
 .hero h1 {
   font-size: 2.3em;
-  letter-spacing: 0.05em;
 }
 
 .hero p {
   color: var(--quaternary-color);
+  font-weight: bold;
 }
 
 .hero .scroll {
@@ -147,5 +147,43 @@ img {
   left: 0;
   top: 0;
   width: 240px;
+}
+
+.skills {
+  background: var(--quaternary-color);
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+}
+
+.skills li {
+  background: var(--white);
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.skills i {
+  font-size: 50px;
+  color: var(--primary-color);
+}
+
+.skills .icon-container {
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.skills .title-skill {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
