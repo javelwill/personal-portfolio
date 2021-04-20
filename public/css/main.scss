@@ -5,6 +5,7 @@
   --secondary-color: #16b096;
   --tertiary-color: #ec3d58;
   --quaternary-color: #fcdab7;
+  --white: #ffffff;
   --gray: #9a9a9a;
   --light-gray: #f2f2f2f2;
   --dark-gray: #3b3b3b;
@@ -41,4 +42,37 @@ img {
 
 .hero-design {
   display: none;
+}
+
+.container {
+  padding: 2em;
+}
+
+.navbar {
+  background: var(--primary-color);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+  }
+
+  .primary-nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    a {
+      color: var(--white);
+      &:hover {
+        border-bottom: 2px solid var(--white);
+      }
+    }
+  }
 }
