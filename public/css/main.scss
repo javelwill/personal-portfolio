@@ -6,6 +6,7 @@
   --tertiary-color: #ec3d58;
   --quaternary-color: #fcdab7;
   --white: #ffffff;
+  --black: #000000;
   --gray: #9a9a9a;
   --light-gray: #f2f2f2f2;
   --dark-gray: #3b3b3b;
@@ -46,6 +47,7 @@ img {
 
 .container {
   padding: 4em 2em;
+  text-align: center;
 }
 
 .navbar {
@@ -80,11 +82,11 @@ img {
 
 .hero {
   background: var(--primary-color);
-  text-align: center;
   color: var(--white);
 
   h1 {
     font-size: 2.3em;
+    letter-spacing: 0.05em;
   }
 
   p {
@@ -94,5 +96,43 @@ img {
   .scroll {
     width: 24px;
     margin-top: 2em;
+  }
+}
+
+img {
+  border-radius: 1em;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary-color);
+  letter-spacing: 0.2em;
+  font-size: 0.85em;
+}
+
+.title {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--black);
+}
+
+.desc {
+  font-size: 0.9em;
+  line-height: 1.8em;
+
+  a {
+    color: var(--tertiary-color);
+  }
+}
+
+.featured {
+  position: relative;
+
+  .hex {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
   }
 }
