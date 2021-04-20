@@ -14,13 +14,13 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
 }
 
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: var(--dark-gray);
   height: 100vh;
+  margin: 0;
 }
 
 ul {
@@ -45,7 +45,7 @@ img {
 }
 
 .container {
-  padding: 2em;
+  padding: 4em 2em;
 }
 
 .navbar {
@@ -55,6 +55,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2em;
   }
 
   .logo {
@@ -74,5 +75,24 @@ img {
         border-bottom: 2px solid var(--white);
       }
     }
+  }
+}
+
+.hero {
+  background: var(--primary-color);
+  text-align: center;
+  color: var(--white);
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+  p {
+    color: var(--quaternary-color);
+  }
+
+  .scroll {
+    width: 24px;
+    margin-top: 2em;
   }
 }

@@ -14,13 +14,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-  margin: 0;
 }
 
 body {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: var(--dark-gray);
   height: 100vh;
+  margin: 0;
 }
 
 ul {
@@ -45,7 +45,7 @@ img {
 }
 
 .container {
-  padding: 2em;
+  padding: 4em 2em;
 }
 
 .navbar {
@@ -62,6 +62,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2em;
 }
 
 .navbar .logo {
@@ -87,5 +88,24 @@ img {
 
 .navbar .primary-nav a:hover {
   border-bottom: 2px solid var(--white);
+}
+
+.hero {
+  background: var(--primary-color);
+  text-align: center;
+  color: var(--white);
+}
+
+.hero h1 {
+  font-size: 2.3em;
+}
+
+.hero p {
+  color: var(--quaternary-color);
+}
+
+.hero .scroll {
+  width: 24px;
+  margin-top: 2em;
 }
 /*# sourceMappingURL=main.css.map */
