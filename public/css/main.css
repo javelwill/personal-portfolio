@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+:root {
+  --primary-color: #0d3052;
+  --secondary-color: #16b096;
+  --tertiary-color: #ec3d58;
+  --quaternary-color: #fcdab7;
+}
+/*# sourceMappingURL=main.css.map */
