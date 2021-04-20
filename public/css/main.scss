@@ -22,6 +22,7 @@ body {
   color: var(--dark-gray);
   height: 100vh;
   margin: 0;
+  text-align: center;
 }
 
 ul {
@@ -47,7 +48,6 @@ img {
 
 .container {
   padding: 4em 2em;
-  text-align: center;
 }
 
 .navbar {
@@ -63,19 +63,14 @@ img {
   .logo {
     color: var(--secondary-color);
     font-weight: bold;
-    font-size: 1.2em;
-    letter-spacing: 0.05em;
   }
 
   .primary-nav {
     display: flex;
     justify-content: space-between;
-    gap: 2em;
     a {
       color: var(--white);
-      &:hover {
-        border-bottom: 2px solid var(--white);
-      }
+      padding: 10px;
     }
   }
 }
@@ -109,6 +104,7 @@ img {
   color: var(--primary-color);
   letter-spacing: 0.2em;
   font-size: 0.85em;
+  margin: 0.3em;
 }
 
 .title {
@@ -120,6 +116,7 @@ img {
 .desc {
   font-size: 0.9em;
   line-height: 1.8em;
+  margin-bottom: 3em;
 
   a {
     color: var(--tertiary-color);
@@ -134,22 +131,18 @@ img {
     left: 0;
     top: 0;
     width: 240px;
+    opacity: 0.3;
   }
 }
 
 .skills {
   background: var(--quaternary-color);
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-  }
-
   li {
     background: var(--white);
     border-radius: 1em;
     padding: 2em;
+    margin-bottom: 1em;
   }
 
   i {
