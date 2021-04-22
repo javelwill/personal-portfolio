@@ -215,3 +215,17 @@ img {
     }
   }
 }
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+  from {
+    transform: translate(244px, 631px);
+    z-index: 5;
+  }
+  to {
+    transform: translate(244px, 655px);
+  }
+}
