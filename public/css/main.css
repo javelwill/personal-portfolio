@@ -199,5 +199,12 @@ img {
   .portfolio .container .left-col .desc {
     margin: unset;
   }
+  .skills ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    grid-gap: 2em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
