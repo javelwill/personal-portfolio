@@ -139,6 +139,7 @@ img {
 
 .featured {
   position: relative;
+  background: var(--light-gray);
 }
 
 .featured .hex {
@@ -147,6 +148,7 @@ img {
   top: 0;
   width: 270px;
   opacity: 0.3;
+  z-index: -1;
 }
 
 .skills {
@@ -177,7 +179,31 @@ img {
   font-weight: bold;
 }
 
+.portfolio {
+  background: var(--light-gray);
+}
+
 @media only screen and (min-width: 800px) {
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav .secondary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav .secondary-nav a {
+    color: var(--white);
+    padding: 10px;
+  }
   .featured,
   .portfolio {
     text-align: left;
