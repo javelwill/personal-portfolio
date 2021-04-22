@@ -193,3 +193,24 @@ img {
     }
   }
 }
+
+@media only screen and (min-width: 1100px) {
+  .hero {
+    text-align: left;
+
+    .container {
+      display: grid;
+      grid-template-columns: 40% auto;
+
+      h1 {
+        font-size: 3em;
+        line-height: 1.2em;
+      }
+
+      .hero-design {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
