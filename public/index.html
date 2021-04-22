@@ -50,19 +50,21 @@
   <section class="hero">
     <div class="container">
       <div class="left-col">
-        <h1>Creative Web And Mobile Solutions</h1>
-        <p>By Javel Wilson</p>
-        <svg class="scroll" xmlns="http://www.w3.org/2000/svg" width="40" height="69" viewBox="0 0 40 69">
-          <g id="Scroll" transform="translate(-235 -619)">
-            <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(235 619)" fill="none" stroke="#fff"
-              stroke-width="4">
-              <rect width="40" height="69" rx="20" stroke="none" />
-              <rect x="2" y="2" width="36" height="65" rx="18" fill="none" />
+        <div class="content">
+          <h1 class="stagger1">Creative Web And Mobile Solutions</h1>
+          <p class="stagger1">By Javel Wilson</p>
+          <svg class="scroll stagger1" xmlns="http://www.w3.org/2000/svg" width="40" height="69" viewBox="0 0 40 69">
+            <g id="Scroll" transform="translate(-235 -619)">
+              <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(235 619)" fill="none" stroke="#fff"
+                stroke-width="4">
+                <rect width="40" height="69" rx="20" stroke="none" />
+                <rect x="2" y="2" width="36" height="65" rx="18" fill="none" />
+              </g>
+              <ellipse class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="10.5" rx="11" ry="10.5"
+                transform="translate(244 631)" fill="#fff" />
             </g>
-            <ellipse class="circle" id="Ellipse_1" data-name="Ellipse 1" cx="11" cy="10.5" rx="11" ry="10.5"
-              transform="translate(244 631)" fill="#fff" />
-          </g>
-        </svg>
+          </svg>
+        </div>
       </div>
       <svg class="hero-design" xmlns="http://www.w3.org/2000/svg" viewBox=" 0 0 1306.63 863.583">
         <g id="Hero_Design" data-name="Hero Design" transform="translate(-605.818 -230.476)">
@@ -205,6 +207,43 @@
       </a>
     </div>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+    integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+    crossorigin="anonymous"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger)
+    var t1 = gsap.timeline()
+
+    t1.add(gsap.from('.content', {
+      y: '-30%', opacity: 0, duration: 2, ease: Power4.easeOut
+    }))
+
+    t1.add(gsap.from('.stagger1', {
+      opacity: 0,
+      y: -50,
+      stagger: 0.3,
+      ease: Power4.easeOut,
+      duration: 2
+    }), "-=1.5")
+
+    t1.add(gsap.from('.hero-design', {
+      opacity: 0,
+      y: 50,
+      ease: Power4.easeOut,
+      duration: 2
+    }), "-=2")
+
+    gsap.from('.hex-anim', {
+      stagger: .2,
+      scale: 0.1,
+      duration: 1,
+      ease: Back.easeOut.config(2)
+    })
+  </script>
 </body>
 
 </html>
