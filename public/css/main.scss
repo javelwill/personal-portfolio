@@ -38,11 +38,15 @@ img {
   width: 100%;
 }
 
-.secondary-nav {
+.primary-nav {
   display: none;
 }
 
 .hero-design {
+  display: none;
+}
+
+.logo {
   display: none;
 }
 
@@ -57,23 +61,46 @@ img {
   background: var(--primary-color);
 
   .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2em;
   }
 
-  .logo {
-    color: var(--secondary-color);
-    font-weight: bold;
-  }
-
-  .primary-nav {
+  .secondary-nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     a {
       color: var(--white);
       padding: 10px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .logo {
+      display: inline-block;
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+
+      .primary-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+          color: var(--white);
+          padding: 10px;
+        }
+      }
     }
   }
 }
@@ -172,22 +199,6 @@ img {
 }
 
 @media only screen and (min-width: 800px) {
-  .navbar {
-    nav {
-      display: flex;
-
-      .secondary-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        a {
-          color: var(--white);
-          padding: 10px;
-        }
-      }
-    }
-  }
-
   .featured,
   .portfolio {
     text-align: left;

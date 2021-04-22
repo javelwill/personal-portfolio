@@ -38,11 +38,15 @@ img {
   width: 100%;
 }
 
-.secondary-nav {
+.primary-nav {
   display: none;
 }
 
 .hero-design {
+  display: none;
+}
+
+.logo {
   display: none;
 }
 
@@ -58,35 +62,61 @@ img {
 }
 
 .navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 2em;
 }
 
-.navbar .logo {
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-.navbar .primary-nav {
+.navbar .secondary-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.navbar .primary-nav a {
+.navbar .secondary-nav a {
   color: var(--white);
   padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 2em;
+  }
+  .navbar .logo {
+    display: inline-block;
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav .primary-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar nav .primary-nav a {
+    color: var(--white);
+    padding: 10px;
+  }
 }
 
 .hero {
@@ -184,26 +214,6 @@ img {
 }
 
 @media only screen and (min-width: 800px) {
-  .navbar nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar nav .secondary-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .navbar nav .secondary-nav a {
-    color: var(--white);
-    padding: 10px;
-  }
   .featured,
   .portfolio {
     text-align: left;
