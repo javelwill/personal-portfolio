@@ -1,5 +1,5 @@
 # Javel Wilson
 
-Personal Website - https://www.javelwilson.web.app
+Personal Website - https://javelwilson.com
 
 ![Screenshot](/javelwilson.gif)
